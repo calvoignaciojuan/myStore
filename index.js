@@ -4,7 +4,7 @@ const {logErrors,boomErrorHandler,errorHandler} = require("./middlewares/error.h
 const cors = require("cors");
 
 const app = express();
-const port = 3000;
+const port = 80;
 
 app.use(express.json()); //para que me puedan llegar objetos json por POST, sino no req.body no devuelve nada
 
