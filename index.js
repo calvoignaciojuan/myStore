@@ -10,6 +10,10 @@ app.use(express.json()); //para que me puedan llegar objetos json por POST, sino
 
 app.use(cors());
 
+app.use("/",(req,res)=>{
+  res.send("HOLA");
+});
+
 routerApi(app);
 
 app.use(logErrors);
