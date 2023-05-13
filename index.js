@@ -8,7 +8,7 @@ const PORT = process.env.PORT || 3001;
 
 app.use(express.json()); //para que me puedan llegar objetos json por POST, sino no req.body no devuelve nada
 
-//app.use(cors());
+app.use(cors());
 
 routerApi(app);
 
